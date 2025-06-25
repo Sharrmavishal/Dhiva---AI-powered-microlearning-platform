@@ -4,67 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dhiva - AI-Powered Microlearning Platform</title>
-    <meta name="description" content="Transform any content into bite-sized, adaptive microlearning journeys. Deliver via WhatsApp, Teams, Slack, or any platform your learners use.">
+    <meta name="description" content="Transform how India learns with AI-powered microlearning on WhatsApp. Adaptive, multilingual education for everyone.">
     
-    <!-- Open Graph -->
+    <!-- Open Graph Tags -->
     <meta property="og:title" content="Dhiva - AI-Powered Microlearning Platform">
-    <meta property="og:description" content="Transform content into adaptive microlearning. Deliver anywhere - WhatsApp, Teams, Slack, LMS.">
+    <meta property="og:description" content="Making quality education accessible through WhatsApp. Learn in your language, at your pace.">
     <meta property="og:image" content="https://res.cloudinary.com/dnm2ejglr/image/upload/v1743592419/07A0C3_-_final_2_sqgezt.png">
     <meta property="og:url" content="https://dhiva.co">
     
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Inter Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Professional Tech Colors -->
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        'primary': '#0F172A',      // Rich navy
-                        'secondary': '#3B82F6',    // Bright blue
-                        'accent': '#10B981',       // Emerald green
-                        'neutral': '#F8FAFC',      // Off-white
-                        'text-primary': '#1E293B', // Deep gray
-                        'text-secondary': '#64748B' // Medium gray
+                        primary: '#0F172A',
+                        secondary: '#3B82F6', 
+                        accent: '#10B981',
+                        neutral: '#F8FAFC',
+                        'text-primary': '#1E293B',
+                        'text-secondary': '#64748B'
                     }
                 }
             }
         }
     </script>
-    
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        
-        .gradient-text {
-            background: linear-gradient(to right, #3B82F6, #10B981);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        
-        .gradient-bg {
-            background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
-        }
-        
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
-        }
-        
-        .pulse {
-            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-        }
-    </style>
 </head>
 <body class="bg-white">
     <!-- Navigation -->
-    <nav class="fixed w-full bg-white/95 backdrop-blur-md z-50 border-b border-gray-100">
+    <nav class="sticky top-0 z-50 bg-white border-b backdrop-blur-lg bg-white/80">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center">
@@ -72,12 +40,14 @@
                          alt="Dhiva" class="h-8 w-8 mr-3">
                     <span class="font-bold text-xl text-primary">Dhiva</span>
                 </div>
+                
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="/about" class="text-text-secondary hover:text-primary transition">About</a>
-                    <a href="#platform" class="text-text-secondary hover:text-primary transition">Platform</a>
-                    <a href="#solutions" class="text-text-secondary hover:text-primary transition">Solutions</a>
-                    <a href="#features" class="text-text-secondary hover:text-primary transition">Features</a>
-                    <a href="#signup-form" class="bg-secondary text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition inline-block">
+                    <a href="#platform" class="text-text-secondary hover:text-primary">Platform</a>
+                    <a href="#solutions" class="text-text-secondary hover:text-primary">Solutions</a>
+                    <a href="#how-it-works" class="text-text-secondary hover:text-primary">How It Works</a>
+                    <a href="#contact" class="text-text-secondary hover:text-primary">Contact</a>
+                    <a href="#signup-form" 
+                       class="bg-secondary text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">
                         Get Early Access
                     </a>
                 </div>
@@ -86,134 +56,166 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="pt-32 pb-20 px-4">
-        <div class="max-w-7xl mx-auto">
-            <!-- Sanskrit Tagline -->
+    <section class="relative bg-gradient-to-br from-neutral to-white py-20 overflow-hidden">
+        <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
+        <div class="max-w-7xl mx-auto px-4 relative">
             <div class="text-center mb-4">
-                <p class="text-lg text-secondary font-medium">
-                    धीवा - Illumined by Intelligence
-                </p>
+                <span class="text-sm text-text-secondary italic">धीवा - Illumined by Intelligence</span>
             </div>
             
-            <!-- Launch Badge -->
-            <div class="text-center mb-8">
-                <div class="inline-flex items-center bg-accent/10 text-accent px-4 py-2 rounded-full text-sm font-medium">
-                    <span class="pulse mr-2">🚀</span>
-                    Launching July 2025 - Join 100+ Early Adopters
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="inline-flex items-center bg-accent/10 text-accent px-4 py-2 rounded-full mb-6">
+                        <span class="animate-pulse mr-2">🚀</span>
+                        Launching July 2025 - Join the Revolution
+                    </div>
+                    
+                    <h1 class="text-5xl font-bold text-primary mb-6 leading-tight">
+                        Transform How <span class="text-secondary">India Learns</span> with AI
+                    </h1>
+                    
+                    <p class="text-xl text-text-secondary mb-8">
+                        Dhiva delivers personalized microlearning through WhatsApp. 
+                        Learn anything, anytime, in your language. Voice-first education 
+                        for 600M+ Indians.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#signup-form" 
+                           class="bg-secondary text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition text-center">
+                            Request Demo
+                        </a>
+                        <a href="#signup-form" 
+                           class="border-2 border-secondary text-secondary px-8 py-4 rounded-lg font-semibold hover:bg-secondary hover:text-white transition text-center">
+                            View Platform Tour
+                        </a>
+                    </div>
+                    
+                    <div class="mt-8 flex items-center gap-6 text-sm text-text-secondary">
+                        <span class="flex items-center"><span class="text-accent mr-1">✓</span> Works on ₹2000 phones</span>
+                        <span class="flex items-center"><span class="text-accent mr-1">✓</span> No app needed</span>
+                        <span class="flex items-center"><span class="text-accent mr-1">✓</span> 11 languages</span>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="text-center max-w-4xl mx-auto">
-                <h1 class="text-5xl md:text-6xl font-bold text-primary mb-6">
-                    AI-Powered Microlearning That
-                    <span class="gradient-text"> Adapts & Evolves</span>
-                </h1>
                 
-                <p class="text-xl text-text-secondary mb-8 leading-relaxed">
-                    Powered by advanced AI, Dhiva transforms any content into intelligent, bite-sized learning experiences. 
-                    Our AI learns how each person learns, delivering seamlessly via WhatsApp, Microsoft Teams, Slack, or your existing LMS.
-                </p>
-                
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="#signup-form" class="bg-secondary text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition text-lg inline-block">
-                        Request Demo
-                    </a>
-                    <a href="#signup-form" class="bg-white text-primary px-8 py-4 rounded-lg font-semibold border-2 border-gray-200 hover:border-secondary transition text-lg inline-block">
-                        View Platform Tour
-                    </a>
-                </div>
-            </div>
-            
-            <!-- Platform Logos -->
-            <div class="mt-16 text-center">
-                <p class="text-sm text-text-secondary mb-6">Deliver microlearning where your learners already are</p>
-                <div class="flex flex-wrap justify-center items-center gap-8 opacity-60">
-                    <div class="flex items-center">
-                        <span class="text-2xl mr-2">💬</span>
-                        <span class="font-semibold">WhatsApp</span>
+                <div class="relative">
+                    <div class="bg-gradient-to-br from-secondary/20 to-accent/20 rounded-2xl p-8 backdrop-blur">
+                        <img src="https://res.cloudinary.com/dnm2ejglr/image/upload/v1733504693/samples/smile.jpg" 
+                             alt="Learning on WhatsApp" 
+                             class="rounded-lg shadow-2xl">
                     </div>
-                    <div class="flex items-center">
-                        <span class="text-2xl mr-2">👔</span>
-                        <span class="font-semibold">MS Teams</span>
+                    <div class="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-lg p-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center">
+                                <span class="text-white font-bold">AI</span>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Adaptive Learning</p>
+                                <p class="text-sm text-text-secondary">Personalized for each user</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="flex items-center">
-                        <span class="text-2xl mr-2">💼</span>
-                        <span class="font-semibold">Slack</span>
-                    </div>
-                    <div class="flex items-center">
-                        <span class="text-2xl mr-2">📚</span>
-                        <span class="font-semibold">Any LMS</span>
-                    </div>
-                    <div class="flex items-center">
-                        <span class="text-2xl mr-2">📧</span>
-                        <span class="font-semibold">Email</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Trust Bar -->
-    <section class="py-12 bg-neutral border-y border-gray-200">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                <div>
-                    <div class="text-3xl font-bold text-primary">85%</div>
-                    <div class="text-text-secondary">Completion Rate</div>
-                </div>
-                <div>
-                    <div class="text-3xl font-bold text-primary">11+</div>
-                    <div class="text-text-secondary">Languages Supported</div>
-                </div>
-                <div>
-                    <div class="text-3xl font-bold text-primary">2.5B</div>
-                    <div class="text-text-secondary">Reachable Users</div>
-                </div>
-                <div>
-                    <div class="text-3xl font-bold text-primary">10x</div>
-                    <div class="text-text-secondary">More Affordable</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Platform Overview -->
-    <section id="platform" class="py-20">
+    <section id="platform" class="py-20 bg-neutral">
         <div class="max-w-7xl mx-auto px-4">
             <div class="text-center mb-12">
                 <h2 class="text-4xl font-bold text-primary mb-4">
-                    The World's First<br>
-                    <span class="text-secondary">Truly Adaptive Learning System</span>
+                    One Platform. Infinite Possibilities.
                 </h2>
                 <p class="text-xl text-text-secondary max-w-3xl mx-auto">
-                    Unlike static content tools, Dhiva builds unique learning paths for each person - adapting in real-time based on comprehension, pace, and even literacy levels.
+                    Dhiva isn't just another EdTech app. It's a complete learning ecosystem 
+                    that meets learners where they are - on WhatsApp.
                 </p>
             </div>
             
-            <!-- Key Innovations -->
-            <div class="bg-neutral rounded-2xl p-8 mb-12">
-                <h3 class="text-2xl font-bold text-center mb-8">What Makes Dhiva Revolutionary</h3>
-                <div class="grid md:grid-cols-3 gap-6">
-                    <div class="text-center">
-                        <div class="bg-accent/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <span class="text-2xl">🧠</span>
-                        </div>
-                        <h4 class="font-semibold mb-2">Learns How People Learn</h4>
-                        <p class="text-sm text-text-secondary">Every response improves the system. Dhiva remembers what works for each learner type.</p>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="bg-secondary/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">📱</span>
                     </div>
-                    <div class="text-center">
-                        <div class="bg-secondary/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <span class="text-2xl">🗣️</span>
-                        </div>
-                        <h4 class="font-semibold mb-2">Voice-First for Illiterate Users</h4>
-                        <p class="text-sm text-text-secondary">Complete audio lessons via WhatsApp voice notes. No reading required.</p>
+                    <h4 class="font-semibold mb-2">WhatsApp Native</h4>
+                    <p class="text-sm text-text-secondary">No downloads. No logins. Just send a message to start learning.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-secondary/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">🧠</span>
                     </div>
-                    <div class="text-center">
-                        <div class="bg-accent/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <span class="text-2xl">🔄</span>
+                    <h4 class="font-semibold mb-2">AI-Powered Adaptation</h4>
+                    <p class="text-sm text-text-secondary">Learns your pace, style, and adjusts content complexity in real-time.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-secondary/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">🌐</span>
+                    </div>
+                    <h4 class="font-semibold mb-2">11 Indian Languages</h4>
+                    <p class="text-sm text-text-secondary">Hindi, Tamil, Telugu, and more. True vernacular education.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-secondary/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">🎙️</span>
+                    </div>
+                    <h4 class="font-semibold mb-2">Voice-First Interaction</h4>
+                    <p class="text-sm text-text-secondary">Learn through listening and speaking. No reading required.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-secondary/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">✅</span>
+                    </div>
+                    <h4 class="font-semibold mb-2">Interactive Assessments</h4>
+                    <p class="text-sm text-text-secondary">Voice or text-based quizzes. Get instant feedback & certifications.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-secondary/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">📊</span>
+                    </div>
+                    <h4 class="font-semibold mb-2">Progress Analytics</h4>
+                    <p class="text-sm text-text-secondary">Track learning journey with detailed insights and reports.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Innovation Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-primary mb-4">
+                    Not Just Content Delivery. <span class="text-secondary">Intelligent Learning Architecture.</span>
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Dhiva transforms static content into dynamic microlearning journeys that adapt to each learner's pace, comprehension, and context.
+                </p>
+            </div>
+            
+            <!-- Key Differentiators -->
+            <div class="bg-gradient-to-r from-secondary/5 to-accent/5 rounded-2xl p-8 mb-12">
+                <h3 class="text-2xl font-bold text-center mb-8">Our Core Innovation: Adaptive Learning for Low-Literacy Users</h3>
+                <div class="grid md:grid-cols-3 gap-6 text-center">
+                    <div>
+                        <div class="bg-white rounded-xl p-6 shadow-sm">
+                            <div class="text-3xl mb-3">🎯</div>
+                            <h4 class="font-semibold mb-2">Context-Aware Teaching</h4>
+                            <p class="text-sm text-text-secondary">Farmer? Get agriculture examples. Shopkeeper? Learn through business scenarios.</p>
                         </div>
-                        <h4 class="font-semibold mb-2">Dynamic Path Switching</h4>
-                        <p class="text-sm text-text-secondary">Struggling? Dhiva automatically switches to simpler explanations or different teaching methods.</p>
+                    </div>
+                    <div>
+                        <div class="bg-white rounded-xl p-6 shadow-sm">
+                            <div class="text-3xl mb-3">🗣️</div>
+                            <h4 class="font-semibold mb-2">Literacy-Agnostic Design</h4>
+                            <p class="text-sm text-text-secondary">Can't read? Learn through voice. Can't write? Answer by speaking.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bg-white rounded-xl p-6 shadow-sm">
+                            <div class="text-3xl mb-3">🔄</div>
+                            <h4 class="font-semibold mb-2">Dynamic Path Switching</h4>
+                            <p class="text-sm text-text-secondary">Struggling? Dhiva automatically switches to simpler explanations or different teaching methods.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -234,8 +236,8 @@
                 <div class="relative">
                     <div class="bg-accent/10 rounded-2xl p-6 hover:bg-accent/20 transition">
                         <div class="text-4xl mb-4">🎯</div>
-                        <h3 class="font-semibold text-lg mb-2">True Personalization</h3>
-                        <p class="text-text-secondary text-sm">Not just pacing - adapts complexity, language, examples based on learner profile</p>
+                        <h3 class="font-semibold text-lg mb-2">Smart Assessments</h3>
+                        <p class="text-text-secondary text-sm">MCQs via voice or text. Adaptive difficulty. Instant scoring & micro-certifications.</p>
                     </div>
                     <div class="hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2 text-accent">
                         →
@@ -253,51 +255,11 @@
                     </div>
                 </div>
                 
-                <div>
-                    <div class="bg-accent/10 rounded-2xl p-6 hover:bg-accent/20 transition">
-                        <div class="text-4xl mb-4">🌍</div>
-                        <h3 class="font-semibold text-lg mb-2">Works Anywhere</h3>
-                        <p class="text-text-secondary text-sm">2G networks, basic phones, no apps - reaches the unreachable</p>
-                    </div>
+                <div class="bg-accent/10 rounded-2xl p-6 hover:bg-accent/20 transition">
+                    <div class="text-4xl mb-4">🏆</div>
+                    <h3 class="font-semibold text-lg mb-2">Certify Progress</h3>
+                    <p class="text-text-secondary text-sm">Micro-credentials for each skill. Shareable certificates. Employer verification.</p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- AI Intelligence Section -->
-    <section class="py-20 bg-gradient-to-r from-primary to-secondary text-white">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold mb-4">Powered by Advanced AI</h2>
-                <p class="text-xl opacity-90 max-w-3xl mx-auto">
-                    Unlike simple chatbots or content tools, Dhiva uses multiple AI models working together to create truly personalized learning experiences.
-                </p>
-            </div>
-            
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
-                    <div class="text-3xl mb-4">🧠</div>
-                    <h3 class="text-xl font-semibold mb-3">Adaptive AI Engine</h3>
-                    <p class="opacity-90">GPT-4 powered content transformation that understands context, complexity, and creates perfect microlessons.</p>
-                </div>
-                
-                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
-                    <div class="text-3xl mb-4">📊</div>
-                    <h3 class="text-xl font-semibold mb-3">Predictive Learning AI</h3>
-                    <p class="opacity-90">Machine learning models predict knowledge gaps and optimize learning paths before problems arise.</p>
-                </div>
-                
-                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
-                    <div class="text-3xl mb-4">🎯</div>
-                    <h3 class="text-xl font-semibold mb-3">Behavioral AI</h3>
-                    <p class="opacity-90">Analyzes response patterns to adapt teaching style, pace, and complexity in real-time.</p>
-                </div>
-            </div>
-            
-            <div class="text-center mt-12">
-                <p class="text-lg opacity-90">
-                    <strong>Every interaction makes Dhiva smarter.</strong> Our AI doesn't just deliver content — it learns, adapts, and evolves with every learner.
-                </p>
             </div>
         </div>
     </section>
@@ -305,74 +267,82 @@
     <!-- Solutions -->
     <section id="solutions" class="py-20 bg-neutral">
         <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center text-primary mb-4">
-                Built for Your Use Case
-            </h2>
-            <p class="text-center text-text-secondary mb-12 text-xl">
-                From government initiatives to enterprise training to individual creators
-            </p>
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-primary mb-4">
+                    Solutions for Every Learning Need
+                </h2>
+                <p class="text-xl text-text-secondary">
+                    From individual learners to large enterprises, Dhiva scales to your needs.
+                </p>
+            </div>
             
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- Government/NGO -->
-                <div class="bg-white rounded-xl p-8 border border-gray-200 hover:border-secondary transition">
-                    <div class="text-3xl mb-4">🏛️</div>
-                    <h3 class="text-xl font-bold text-primary mb-3">Government & NGOs</h3>
-                    <p class="text-text-secondary mb-4">
-                        Perfect for large-scale skill development programs reaching millions in rural areas.
+                <div class="bg-white rounded-2xl p-8 hover:shadow-xl transition">
+                    <div class="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mb-6">
+                        <span class="text-2xl">👤</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">For Individuals</h3>
+                    <p class="text-text-secondary mb-6">
+                        Learn new skills, prepare for exams, or pursue hobbies at your own pace.
                     </p>
                     <ul class="space-y-2 text-sm">
                         <li class="flex items-start">
                             <span class="text-accent mr-2">✓</span>
-                            <span>Voice-based learning for low literacy</span>
+                            <span>Free tier with 5 lessons/month</span>
                         </li>
                         <li class="flex items-start">
                             <span class="text-accent mr-2">✓</span>
-                            <span>Works on basic phones & 2G</span>
+                            <span>Pay-as-you-learn model</span>
                         </li>
                         <li class="flex items-start">
                             <span class="text-accent mr-2">✓</span>
-                            <span>Multi-language support</span>
+                            <span>Progress tracking</span>
                         </li>
                         <li class="flex items-start">
                             <span class="text-accent mr-2">✓</span>
-                            <span>Track progress at scale</span>
+                            <span>Completion certificates</span>
                         </li>
                     </ul>
                 </div>
                 
-                <!-- Enterprise -->
-                <div class="bg-white rounded-xl p-8 border border-gray-200 hover:border-secondary transition">
-                    <div class="text-3xl mb-4">🏢</div>
-                    <h3 class="text-xl font-bold text-primary mb-3">Enterprises</h3>
-                    <p class="text-text-secondary mb-4">
-                        Designed for companies like Adobe, TCS, or any organization needing scalable training.
+                <div class="bg-white rounded-2xl p-8 hover:shadow-xl transition border-2 border-secondary">
+                    <div class="absolute -mt-12 -ml-4 bg-secondary text-white px-4 py-1 rounded-full text-sm">
+                        Most Popular
+                    </div>
+                    <div class="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mb-6">
+                        <span class="text-2xl">🏢</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">For Organizations</h3>
+                    <p class="text-text-secondary mb-6">
+                        Train your workforce with custom courses and detailed analytics.
                     </p>
                     <ul class="space-y-2 text-sm">
                         <li class="flex items-start">
                             <span class="text-accent mr-2">✓</span>
-                            <span>MS Teams & Slack integration</span>
+                            <span>Bulk enrollment via Excel</span>
                         </li>
                         <li class="flex items-start">
                             <span class="text-accent mr-2">✓</span>
-                            <span>HRMS & LMS compatibility</span>
+                            <span>Custom course creation</span>
                         </li>
                         <li class="flex items-start">
                             <span class="text-accent mr-2">✓</span>
-                            <span>Department-wise analytics</span>
+                            <span>Progress dashboards</span>
                         </li>
                         <li class="flex items-start">
                             <span class="text-accent mr-2">✓</span>
-                            <span>White-label options</span>
+                            <span>API integration</span>
                         </li>
                     </ul>
                 </div>
                 
-                <!-- Creators -->
-                <div class="bg-white rounded-xl p-8 border border-gray-200 hover:border-secondary transition">
-                    <div class="text-3xl mb-4">🎓</div>
-                    <h3 class="text-xl font-bold text-primary mb-3">Educators & Creators</h3>
-                    <p class="text-text-secondary mb-4">
-                        Monetize your expertise and reach thousands without building tech infrastructure.
+                <div class="bg-white rounded-2xl p-8 hover:shadow-xl transition">
+                    <div class="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mb-6">
+                        <span class="text-2xl">👨‍🏫</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">For Creators</h3>
+                    <p class="text-text-secondary mb-6">
+                        Monetize your expertise by creating courses for millions.
                     </p>
                     <ul class="space-y-2 text-sm">
                         <li class="flex items-start">
@@ -412,177 +382,145 @@
                         <p class="text-sm opacity-90">Cadre education with bulk enrollment and progress monitoring</p>
                     </div>
                     <div class="bg-white/10 rounded-lg p-4">
-                        <h4 class="font-semibold mb-2">Healthcare Education</h4>
-                        <p class="text-sm opacity-90">Patient education in local languages with high completion rates</p>
+                        <h4 class="font-semibold mb-2">Financial Literacy</h4>
+                        <p class="text-sm opacity-90">Banking and investment education for rural populations</p>
                     </div>
                     <div class="bg-white/10 rounded-lg p-4">
-                        <h4 class="font-semibold mb-2">Agriculture Extension</h4>
-                        <p class="text-sm opacity-90">Modern farming techniques for rural farmers via WhatsApp</p>
+                        <h4 class="font-semibold mb-2">Health Education</h4>
+                        <p class="text-sm opacity-90">Preventive healthcare knowledge in local languages</p>
                     </div>
                     <div class="bg-white/10 rounded-lg p-4">
-                        <h4 class="font-semibold mb-2">Celebrity Masterclasses</h4>
-                        <p class="text-sm opacity-90">Premium content with IP protection and monetization</p>
+                        <h4 class="font-semibold mb-2">Agricultural Best Practices</h4>
+                        <p class="text-sm opacity-90">Modern farming techniques via voice messages</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Features -->
-    <section id="features" class="py-20">
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center text-primary mb-12">
-                Enterprise-Grade Features
-            </h2>
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-primary mb-4">
+                    As Simple as Sending a Message
+                </h2>
+                <p class="text-xl text-text-secondary">
+                    No apps. No complications. Just learning.
+                </p>
+            </div>
             
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- AI & Learning -->
-                <div class="bg-neutral rounded-xl p-6">
-                    <div class="bg-secondary/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                        <span class="text-2xl">🧠</span>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl font-bold text-secondary">1</span>
                     </div>
-                    <h3 class="font-semibold text-lg mb-2">Adaptive AI</h3>
-                    <p class="text-text-secondary text-sm">
-                        Dynamic pacing, competency detection, personalized paths
-                    </p>
+                    <h4 class="font-semibold mb-2">Send "Hi" on WhatsApp</h4>
+                    <p class="text-sm text-text-secondary">Start your learning journey with a simple message</p>
                 </div>
                 
-                <!-- Multi-Channel -->
-                <div class="bg-neutral rounded-xl p-6">
-                    <div class="bg-accent/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                        <span class="text-2xl">📱</span>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl font-bold text-secondary">2</span>
                     </div>
-                    <h3 class="font-semibold text-lg mb-2">Multi-Channel</h3>
-                    <p class="text-text-secondary text-sm">
-                        WhatsApp, Teams, Slack, Email, LMS integration
-                    </p>
+                    <h4 class="font-semibold mb-2">Choose Your Path</h4>
+                    <p class="text-sm text-text-secondary">Select language, topic, and learning style</p>
                 </div>
                 
-                <!-- Languages -->
-                <div class="bg-neutral rounded-xl p-6">
-                    <div class="bg-secondary/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                        <span class="text-2xl">🌍</span>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl font-bold text-secondary">3</span>
                     </div>
-                    <h3 class="font-semibold text-lg mb-2">Global Support</h3>
-                    <p class="text-text-secondary text-sm">
-                        11+ languages, voice support, cultural adaptation
-                    </p>
+                    <h4 class="font-semibold mb-2">Learn & Assess</h4>
+                    <p class="text-sm text-text-secondary">Receive bite-sized lessons and take voice/text assessments</p>
                 </div>
                 
-                <!-- Analytics -->
-                <div class="bg-neutral rounded-xl p-6">
-                    <div class="bg-accent/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                        <span class="text-2xl">📊</span>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl font-bold text-secondary">4</span>
                     </div>
-                    <h3 class="font-semibold text-lg mb-2">Deep Analytics</h3>
-                    <p class="text-text-secondary text-sm">
-                        Progress tracking, knowledge gaps, predictive insights
-                    </p>
+                    <h4 class="font-semibold mb-2">Track & Certify</h4>
+                    <p class="text-sm text-text-secondary">Monitor progress and earn certificates</p>
                 </div>
-                
-                <!-- Security -->
-                <div class="bg-neutral rounded-xl p-6">
-                    <div class="bg-secondary/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                        <span class="text-2xl">🔒</span>
-                    </div>
-                    <h3 class="font-semibold text-lg mb-2">Enterprise Security</h3>
-                    <p class="text-text-secondary text-sm">
-                        GDPR compliant, SSO, role-based access, audit trails
-                    </p>
-                </div>
-                
-                <!-- Content Protection -->
-                <div class="bg-neutral rounded-xl p-6">
-                    <div class="bg-accent/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                        <span class="text-2xl">🛡️</span>
-                    </div>
-                    <h3 class="font-semibold text-lg mb-2">IP Protection</h3>
-                    <p class="text-text-secondary text-sm">
-                        Watermarking, time-limited access, screenshot prevention
-                    </p>
-                </div>
-                
-                <!-- Scale -->
-                <div class="bg-neutral rounded-xl p-6">
-                    <div class="bg-secondary/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                        <span class="text-2xl">⚡</span>
-                    </div>
-                    <h3 class="font-semibold text-lg mb-2">Built to Scale</h3>
-                    <p class="text-text-secondary text-sm">
-                        Handle millions of learners, auto-scaling infrastructure
-                    </p>
-                </div>
-                
-                <!-- Monetization -->
-                <div class="bg-neutral rounded-xl p-6">
-                    <div class="bg-accent/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                        <span class="text-2xl">💰</span>
-                    </div>
-                    <h3 class="font-semibold text-lg mb-2">Monetization</h3>
-                    <p class="text-text-secondary text-sm">
-                        Built-in payments, subscriptions, revenue sharing
-                    </p>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <div class="inline-flex items-center bg-accent/10 text-accent px-6 py-3 rounded-full">
+                    <span class="mr-2">📱</span>
+                    <span class="font-semibold">Works on any phone with WhatsApp</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Launch Timeline -->
-    <section class="py-20 gradient-bg text-white">
+    <!-- Stats/Impact -->
+    <section class="py-20 bg-gradient-to-r from-primary to-secondary text-white">
         <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-4">Join the Microlearning Revolution</h2>
-            <p class="text-center text-xl mb-12 opacity-90">Be part of transforming how the world learns</p>
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">
+                    Built for India's Scale
+                </h2>
+                <p class="text-xl opacity-90">
+                    Addressing the world's largest education challenge
+                </p>
+            </div>
             
-            <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-                <div class="text-center">
-                    <div class="bg-white/10 rounded-2xl p-8 backdrop-blur-sm">
-                        <div class="text-3xl mb-4">🚀</div>
-                        <h3 class="text-2xl font-bold mb-2">July 2025</h3>
-                        <p class="opacity-90">Beta Launch</p>
-                        <p class="text-sm mt-2 opacity-75">100 early creators</p>
-                    </div>
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-5xl font-bold mb-2">600M+</div>
+                    <p class="text-lg opacity-90">WhatsApp Users in India</p>
                 </div>
-                
-                <div class="text-center">
-                    <div class="bg-white/10 rounded-2xl p-8 backdrop-blur-sm">
-                        <div class="text-3xl mb-4">🌟</div>
-                        <h3 class="text-2xl font-bold mb-2">Sept 2025</h3>
-                        <p class="opacity-90">Public Launch</p>
-                        <p class="text-sm mt-2 opacity-75">Open for all creators</p>
-                    </div>
+                <div>
+                    <div class="text-5xl font-bold mb-2">287M</div>
+                    <p class="text-lg opacity-90">Adults Need Literacy Support</p>
                 </div>
-                
-                <div class="text-center">
-                    <div class="bg-white/10 rounded-2xl p-8 backdrop-blur-sm">
-                        <div class="text-3xl mb-4">🏢</div>
-                        <h3 class="text-2xl font-bold mb-2">Q4 2025</h3>
-                        <p class="opacity-90">Enterprise Features</p>
-                        <p class="text-sm mt-2 opacity-75">Full platform capabilities</p>
-                    </div>
+                <div>
+                    <div class="text-5xl font-bold mb-2">22</div>
+                    <p class="text-lg opacity-90">Official Languages</p>
+                </div>
+                <div>
+                    <div class="text-5xl font-bold mb-2">70%</div>
+                    <p class="text-lg opacity-90">Rural Internet Users</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA -->
-    <section class="py-20" id="signup-form">
-        <div class="max-w-4xl mx-auto px-4 text-center">
+    <!-- Contact/CTA -->
+    <section id="contact" class="py-20 bg-neutral">
+        <div class="max-w-7xl mx-auto px-4 text-center">
             <h2 class="text-4xl font-bold text-primary mb-4">
-                Ready to Transform Your Content into<br>
-                <span class="gradient-text">Intelligent Microlearning?</span>
+                Be Part of India's Learning Revolution
             </h2>
             <p class="text-xl text-text-secondary mb-8">
-                Join 100+ early adopters shaping the future of education
+                Join forward-thinking organizations already transforming how their people learn.
             </p>
             
-            <form class="max-w-md mx-auto" method="POST" data-netlify="true" name="early-access">
+            <form id="signup-form" data-netlify="true" name="early-access" method="POST" class="max-w-2xl mx-auto bg-white rounded-2xl p-8 shadow-lg">
                 <input type="hidden" name="form-name" value="early-access">
-                <div class="flex flex-col gap-4">
+                <h3 class="text-2xl font-bold mb-6">Get Early Access</h3>
+                
+                <div class="grid md:grid-cols-2 gap-4 mb-4">
+                    <input type="text" 
+                           name="name"
+                           placeholder="Your name" 
+                           required
+                           class="px-6 py-3 rounded-lg border border-gray-300 focus:border-secondary focus:outline-none">
+                    
+                    <input type="tel" 
+                           name="phone"
+                           placeholder="WhatsApp number" 
+                           required
+                           class="px-6 py-3 rounded-lg border border-gray-300 focus:border-secondary focus:outline-none">
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-4 mb-6">
                     <input type="email" 
                            name="email"
                            placeholder="Work email" 
                            required
                            class="px-6 py-3 rounded-lg border border-gray-300 focus:border-secondary focus:outline-none">
+                    
                     <select name="role" class="px-6 py-3 rounded-lg border border-gray-300 focus:border-secondary focus:outline-none">
                         <option>I am a...</option>
                         <option>Government Organization</option>
@@ -591,11 +529,12 @@
                         <option>Individual Creator/Educator</option>
                         <option>NGO/Non-Profit</option>
                     </select>
-                    <button type="submit" 
-                            class="bg-secondary text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
-                        Get Early Access
-                    </button>
                 </div>
+                
+                <button type="submit" 
+                        class="w-full bg-secondary text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+                    Get Early Access
+                </button>
             </form>
             
             <p class="mt-6 text-text-secondary">
@@ -626,7 +565,7 @@
                         <li><a href="#platform" class="hover:text-primary">Features</a></li>
                         <li><a href="#solutions" class="hover:text-primary">Solutions</a></li>
                         <li><a href="#" onclick="alert('Coming soon!')" class="hover:text-primary">API Docs</a></li>
-                        <li><a href="#" onclick="alert('Coming soon!')" class="hover:text-primary">Pricing</a></li>
+                        <li><a href="#" onclick="alert('Coming soon!')" class="hover:text-primary">Security</a></li>
                     </ul>
                 </div>
                 
@@ -640,44 +579,34 @@
                     </ul>
                 </div>
                 
-                <div>
+                <div id="contact-info">
                     <h4 class="font-semibold text-primary mb-4">Contact</h4>
-                    <ul class="space-y-2 text-sm text-text-secondary">
-                        <li>Delhi NCR, India</li>
-                        <li><a href="mailto:contact@dhiva.co" class="hover:text-primary">contact@dhiva.co</a></li>
-                        <li><a href="tel:+919821983456" class="hover:text-primary">+91 98219 83456</a></li>
-                    </ul>
+                    <p class="text-sm text-text-secondary mb-2">Delhi NCR, India</p>
+                    <p class="text-sm text-text-secondary mb-2">
+                        <a href="mailto:contact@dhiva.co" class="hover:text-primary">contact@dhiva.co</a>
+                    </p>
+                    <p class="text-sm text-text-secondary mb-4">
+                        <a href="tel:+919821983456" class="hover:text-primary">+91 98219 83456</a>
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-text-secondary hover:text-primary">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1112.324 0 6.162 6.162 0 01-12.324 0zM12 16a4 4 0 110-8 4 4 0 010 8zm4.965-10.405a1.44 1.44 0 112.881.001 1.44 1.44 0 01-2.881-.001z"/></svg>
+                        </a>
+                        <a href="#" class="text-text-secondary hover:text-primary">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+                        </a>
+                        <a href="#" class="text-text-secondary hover:text-primary">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                    </div>
                 </div>
             </div>
             
-            <div class="border-t mt-8 pt-8 text-center text-sm text-text-secondary">
-                <p>&copy; 2025 Dhiva AI Technologies. All rights reserved.</p>
+            <div class="mt-8 pt-8 border-t text-center text-sm text-text-secondary">
+                <p class="mb-2">© 2025 Dhiva AI Technologies. All rights reserved.</p>
+                <p class="italic">धीवा - Where intelligence illuminates learning | Crafted with purpose in India 🇮🇳</p>
             </div>
         </div>
     </footer>
-
-    <script>
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Form submission
-        document.querySelector('form').addEventListener('submit', function() {
-            // Let Netlify handle the form submission
-            setTimeout(() => {
-                alert('Thank you for your interest! We\'ll contact you within 24 hours with early access details.');
-            }, 500);
-        });
-    </script>
 </body>
 </html>
