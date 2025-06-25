@@ -518,7 +518,7 @@
     </section>
 
     <!-- CTA -->
-    <section class="py-20">
+    <section class="py-20" id="signup-form">
         <div class="max-w-4xl mx-auto px-4 text-center">
             <h2 class="text-4xl font-bold text-primary mb-4">
                 Ready to Transform Your Content into<br>
@@ -624,9 +624,11 @@
 
         // Form submission
         function handleSubmit(event) {
-            event.preventDefault();
-            alert('Thank you for your interest! We\'ll contact you within 24 hours with early access details.');
-            event.target.reset();
+            // Let Netlify handle the form submission
+            // The success message will show after Netlify processes it
+            setTimeout(() => {
+                alert('Thank you for your interest! We\'ll contact you within 24 hours with early access details.');
+            }, 500);
         }
     </script>
 </body>
